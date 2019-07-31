@@ -23,7 +23,6 @@ public class MainActivity extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main);
-
     }
 
     public void draw(View v){
@@ -61,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
             canvas.drawPaint(paint);
             paint.setColor(Color.BLACK);
             canvas.drawCircle(x / 2, y / 2, radius, paint);
-            int i ;
+            int i;
             d = d - 1;
             for (i = 0; i < d; i++){
                 x = x + (c * 4);
